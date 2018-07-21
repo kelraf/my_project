@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="{{url_for('static',filename='styles/landing_page.css')}}" />
+</head>
+<body>
+    <div class="logo"></div>
+    <div class="name">
+        <h1>BacketList</h1>
+    </div>
+    <div class="buttons">
+        <a href="{{ url_for('registration_1')}}" class="reg"><button>Registration</button></a>
+
+        <a href="{{url_for('login')}}" class="reg"><button>Login</button></a>
+    </div>
+</body>
+</html>

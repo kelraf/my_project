@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form One</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="{{url_for('static',filename='styles/reg.css')}}" />
+</head>
+<body>
+    <div class="top-bar">
+        <a href="{{url_for('login')}}">Login</a>
+    </div>
+    <div class="container">
+        <img src="{{url_for('static', filename='pics/reg.png')}}" class="reg" />
+        <p id="p">Registration</p>
+        <form>
+            <p>First Name</p>
+            <input type="text" placeholder="Enter First Name" name="first_name" />
+
+            <p>Last name</p>
+            <input type="text" placeholder="Enter Last Name" name="last_name" />
+
+            <p>Email</p>
+            <input type="text" placeholder="Enter Email" name="email" />
+            <a href="{{url_for('registration_2')}}" id="next">Next</a>
+        </form>
+    </div>
+</body>
+</html>
